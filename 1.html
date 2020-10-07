@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>WEB</title>
+        <link rel="stylesheet" href ="style.css">
+        <body>
+            <div class="main">
+                <nav>
+                    <div class="logo">
+                        <img src="images/logo.png">
+
+                    </div>
+                    <div class="nav-link">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Phone</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Cart</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="info">
+                    <div class="overlay"></div>
+                    <img src="images/mobile.png" class="mobile">
+                    <div id="cir">
+                        <div class="feature">
+<img src="images/camera.png">
+<h1>Camera</h1>
+                        <p>12 mp</p>
+                        </div>
+                        <div class="feature">
+                            <img src="images/display.png">
+                            <h1>Display</h1>
+                        <p>bright</p></div>
+                        <div class="feature">
+                            <img src="images/processor.png">
+                            <h1>processor</h1>
+                        <p>good</p>
+                            
+                        </div>
+                        <div class="feature">
+                            <img src="images/battery.png">
+                            <h1>battery</h1>
+                        <p>long</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <img src="images/arrow.png" id="up">
+                <h3>features</h3>
+                <img src="images/arrow.png" id="down">
+            </div>
+            <script>
+                var circle=document.getElementById("cir");
+                var up=document.getElementById("up");
+                var down=document.getElementById("down");
+                var rotatevalue=circle.style.transform;
+                var rotatesum;
+                up.onclick=function(){
+                    rotatesum=rotatevalue+"rotate(-90deg)";
+                    circle.style.transform=rotatesum;
+                    rotatevalue=rotatesum;
+                }
+                down.onclick=function(){
+                    rotatesum=rotatevalue+"rotate(+90deg)";
+                    circle.style.transform=rotatesum;
+                    rotatevalue=rotatesum;
+                }
+
+                </script>
+        </body>
+ 
+    </head>
+</html>
